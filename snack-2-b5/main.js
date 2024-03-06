@@ -24,8 +24,9 @@ console.log(`Queste zucchine non superano i 15 cm`,zucchineCorte);
 
 let lunghePeso = 0;
 zucchineLunghe.forEach (zucchina => lunghePeso += zucchina.peso)
-console.log(lunghePeso);
+lunghePeso = Number(lunghePeso.toFixed(2))
+console.log(`Le zucchine più lunghe pesano `,lunghePeso);
 
 let cortePeso = 0;
 zucchineCorte.forEach (zucchina => cortePeso += zucchina.peso)
-console.log(cortePeso);
+console.log(`Le zucchine più corte pesano `,cortePeso);
